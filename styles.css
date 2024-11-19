@@ -11,13 +11,16 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.6;
-    background-color: #863d13;
-    color: #863d13;
+    background-image: url("fundo.jpg");
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    color: #311809;
 }
 
 /* Definições para o cabeçalho */
 header {
-    background-color: #66CDAA; /* Cor de fundo */
+    background-color: #317c63; /* Cor de fundo */
     padding: 10px 0; /* Espaçamento superior e inferior */
 }
 
@@ -39,6 +42,7 @@ h1 {
     color: #fff; /* Cor do título */
     font-size: 2rem; /* Tamanho da fonte */
     margin: 0; /* Remove margens do título */
+    text-align: center;
 }
 
 nav ul {
@@ -68,27 +72,25 @@ nav ul li a:hover {
     padding: 40px 20px;
 }
 
-#sobre {
-    background-color: AntiqueWhite;
-}
 
-#servicos {
-    background-color: AntiqueWhite;
-}
-
-#contato {
-    background-color: AntiqueWhite;
-}
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 p {
     font-size: 1.1rem;
 }
 
+.servico p{
+    color:white;
+}
+
+.servico h3 {
+    color: white;
+}
 /* Serviços */
 .servicos-container {
     display: flex;
@@ -98,7 +100,7 @@ p {
 }
 
 .servico {
-    background-color: #66CDAA;
+    background-color: #317c63; /* Cor de fundo */;
     padding: 20px;
     border-radius: 8px;
     width: 30%;
@@ -108,6 +110,11 @@ p {
 .servico h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+}
+
+.section p{
+    text-align: center;
+    font-size: 30px;
 }
 
 /* Estilo geral do formulário */
